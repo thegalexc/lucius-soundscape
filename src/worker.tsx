@@ -48,6 +48,15 @@ export default defineApp([
   },
   render(Document, [
     route("/", () => new Response("Hello, World!")),
+    route("/ping", () => new Response("pong")),
+    route("/lucius", function () {
+      return (
+        <div>
+          <h1>Lucius</h1>
+          <p>Welcome to the soundscape of Lucius.</p>
+        </div>
+      );
+    }),
     route("/protected", [
       ({ ctx }) => {
         if (!ctx.user) {

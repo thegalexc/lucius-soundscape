@@ -27,5 +27,11 @@
       "new_sqlite_classes": ["SessionDurableObject"]
     }
   ],
-  "d1_databases": []
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "lucius-soundscape",
+      "database_id": "lucius-soundscape"
+    }
+  ]
 }
