@@ -34,10 +34,14 @@
     "rwsdk": "0.0.83"
   },
   "devDependencies": {
+    "@headlessui/react": "^2.2.3",
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/vite": "^4.1.7",
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "prisma": "~6.5.0",
+    "tailwindcss": "^4.1.7",
     "typescript": "^5.8.3",
     "vibe-rules": "^0.2.31",
     "vite": "^6.2.6",
@@ -52,5 +56,6 @@
       "sharp",
       "workerd"
     ]
-  }
+  },
+  "packageManager": "pnpm@8.15.3+sha1.64838798f519c18029c1e8a1310e16101fc2eda0"
 }

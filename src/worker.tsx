@@ -1,6 +1,7 @@
 import { defineApp, ErrorResponse } from "rwsdk/worker";
 import { route, render, prefix } from "rwsdk/router";
 import { Document } from "@/app/Document";
+import { DemoProtected } from "@/app/pages/DemoProtected";
 import { Home } from "@/app/pages/Home";
 import { setCommonHeaders } from "@/app/headers";
 import { userRoutes } from "@/app/pages/user/routes";
@@ -47,16 +48,9 @@ export default defineApp([
     }
   },
   render(Document, [
-    route("/", () => new Response("Lucius' Soundscape!")),
+    route("/", Home),
     route("/ping", () => new Response("pong")),
-    route("/lucius", function () {
-      return (
-        <div>
-          <h1>Lucius</h1>
-          <p>Welcome to the soundscape of Lucius.</p>
-        </div>
-      );
-    }),
+    route("/lucius", Home),
     route("/protected", [
       ({ ctx }) => {
         if (!ctx.user) {
@@ -66,7 +60,7 @@ export default defineApp([
           });
         }
       },
-      Home,
+      DemoProtected,
     ]),
     prefix("/user", userRoutes),
   ]),
