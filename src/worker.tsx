@@ -47,7 +47,7 @@ export default defineApp([
     }
   },
   render(Document, [
-    route("/", () => new Response("Hello, World!")),
+    route("/", () => new Response("Lucius' Soundscape!")),
     route("/ping", () => new Response("pong")),
     route("/lucius", function () {
       return (

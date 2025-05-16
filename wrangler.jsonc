@@ -3,7 +3,9 @@
   "name": "lucius-soundscape",
   "main": "src/worker.tsx",
   "compatibility_date": "2024-09-23",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "assets": {
     "binding": "ASSETS"
   },
@@ -24,14 +26,16 @@
   "migrations": [
     {
       "tag": "v1",
-      "new_sqlite_classes": ["SessionDurableObject"]
+      "new_sqlite_classes": [
+        "SessionDurableObject"
+      ]
     }
   ],
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "lucius-soundscape",
-      "database_id": "lucius-soundscape"
+      "database_id": "18590c66-a5ab-4e5c-89bb-efcf10305046"
     }
   ]
 }
